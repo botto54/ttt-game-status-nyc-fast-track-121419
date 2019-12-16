@@ -62,7 +62,6 @@ end
 
 
 def over?(board)
-  
   if draw?(board) || won?(board)
     return TRUE
   else
@@ -74,7 +73,7 @@ def winner(board)
   if won?(board)
     a_winning_combo = won?(board)
     index = a_winning_combo[0]
-    return board[index]
+    return board[index] #this returns the element at the first index of the winning combination
   else
     return nil
   end
